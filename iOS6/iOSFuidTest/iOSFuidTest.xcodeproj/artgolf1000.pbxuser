@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* iOSFuidTestAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1091, 330}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 489}";
+		};
+	};
+	1D3623250D0F684500981E51 /* iOSFuidTestAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1091, 1261}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 657}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* iOSFuidTest */ = {
+		activeExec = 0;
+		executables = (
+			33417F2E147A27D700FFF0B8 /* iOSFuidTest */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* iOSFuidTestViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1091, 330}}";
+			sepNavSelRange = "{354, 0}";
+			sepNavVisRange = "{0, 356}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* iOSFuidTestViewController.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1091, 1638}}";
+			sepNavSelRange = "{330, 0}";
+			sepNavVisRange = "{51, 615}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 33417F2E147A27D700FFF0B8 /* iOSFuidTest */;
+		activeSDKPreference = iphoneos4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* iOSFuidTest */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* iOSFuidTest */,
+		);
+		codeSenseManager = 33417F40147A280400FFF0B8 /* Code sense */;
+		executables = (
+			33417F2E147A27D700FFF0B8 /* iOSFuidTest */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					913,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 343558995;
+			PBXWorkspaceStateSaveDate = 343558995;
+		};
+		perUserProjectItems = {
+			33417FD9147A2C0A00FFF0B8 /* PBXTextBookmark */ = 33417FD9147A2C0A00FFF0B8 /* PBXTextBookmark */;
+			33417FDA147A2C0A00FFF0B8 /* PBXTextBookmark */ = 33417FDA147A2C0A00FFF0B8 /* PBXTextBookmark */;
+			33417FFB147A2F1100FFF0B8 /* PBXTextBookmark */ = 33417FFB147A2F1100FFF0B8 /* PBXTextBookmark */;
+			3341801F147A30FD00FFF0B8 /* PBXTextBookmark */ = 3341801F147A30FD00FFF0B8 /* PBXTextBookmark */;
+			334180C3147A377400FFF0B8 /* PBXTextBookmark */ = 334180C3147A377400FFF0B8 /* PBXTextBookmark */;
+			3341818A147A453500FFF0B8 /* PBXTextBookmark */ = 3341818A147A453500FFF0B8 /* PBXTextBookmark */;
+			33418229147A47F200FFF0B8 /* PBXTextBookmark */ = 33418229147A47F200FFF0B8 /* PBXTextBookmark */;
+			3341822A147A47F200FFF0B8 /* PBXTextBookmark */ = 3341822A147A47F200FFF0B8 /* PBXTextBookmark */;
+			3341822B147A47F200FFF0B8 /* PBXTextBookmark */ = 3341822B147A47F200FFF0B8 /* PBXTextBookmark */;
+			3341822C147A47F200FFF0B8 /* PlistBookmark */ = 3341822C147A47F200FFF0B8 /* PlistBookmark */;
+			3341822E147A47F200FFF0B8 /* PBXTextBookmark */ = 3341822E147A47F200FFF0B8 /* PBXTextBookmark */;
+			33A6E526147A4C840087B74A /* PBXTextBookmark */ = 33A6E526147A4C840087B74A /* PBXTextBookmark */;
+		};
+		sourceControlManager = 33417F3F147A280400FFF0B8 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1091, 358}}";
+			sepNavSelRange = "{349, 0}";
+			sepNavVisRange = "{0, 351}";
+		};
+	};
+	33417F2E147A27D700FFF0B8 /* iOSFuidTest */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = iOSFuidTest;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	33417F3F147A280400FFF0B8 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	33417F40147A280400FFF0B8 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	33417FD9147A2C0A00FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 17";
+		rLen = 0;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	33417FDA147A2C0A00FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 33417FDB147A2C0A00FFF0B8 /* example.c */;
+		name = "example.c: 17";
+		rLen = 24;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 458;
+		vrLoc = 0;
+	};
+	33417FDB147A2C0A00FFF0B8 /* example.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = example.c;
+		path = "/Users/artgolf1000/Desktop/coreaudio/fluidsynth-1.0.9/doc/example.c";
+		sourceTree = "<absolute>";
+	};
+	33417FFB147A2F1100FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 33417FFC147A2F1100FFF0B8 /* audio.h */;
+		name = "audio.h: 55";
+		rLen = 0;
+		rLoc = 2109;
+		rType = 0;
+		vrLen = 947;
+		vrLoc = 1501;
+	};
+	33417FFC147A2F1100FFF0B8 /* audio.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = audio.h;
+		path = /Users/artgolf1000/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/include/fluidsynth/audio.h;
+		sourceTree = "<absolute>";
+	};
+	3341801C147A306F00FFF0B8 /* AudioServices.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AudioServices.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h;
+		sourceTree = "<absolute>";
+	};
+	3341801F147A30FD00FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 33418020147A30FD00FFF0B8 /* _string.h */;
+		name = "_string.h: 74";
+		rLen = 0;
+		rLoc = 2407;
+		rType = 0;
+		vrLen = 1010;
+		vrLoc = 1914;
+	};
+	33418020147A30FD00FFF0B8 /* _string.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = _string.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/secure/_string.h;
+		sourceTree = "<absolute>";
+	};
+	334180C3147A377400FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3341801C147A306F00FFF0B8 /* AudioServices.h */;
+		name = "AudioServices.h: 679";
+		rLen = 0;
+		rLoc = 36517;
+		rType = 0;
+		vrLen = 1663;
+		vrLoc = 35518;
+	};
+	3341810E147A3DE800FFF0B8 /* fluid_coreaudio.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = fluid_coreaudio.c;
+		path = "/Users/artgolf1000/Desktop/coreaudio/fluidsynth-1.0.9/src/fluid_coreaudio.c";
+		sourceTree = "<absolute>";
+	};
+	3341818A147A453500FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3341810E147A3DE800FFF0B8 /* fluid_coreaudio.c */;
+		name = "fluid_coreaudio.c: 263";
+		rLen = 0;
+		rLoc = 7170;
+		rType = 0;
+		vrLen = 908;
+		vrLoc = 0;
+	};
+	33418229147A47F200FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* iOSFuidTestViewController.h */;
+		name = "iOSFuidTestViewController.h: 19";
+		rLen = 0;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 356;
+		vrLoc = 0;
+	};
+	3341822A147A47F200FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* iOSFuidTestAppDelegate.m */;
+		name = "iOSFuidTestAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 657;
+		vrLoc = 0;
+	};
+	3341822B147A47F200FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* iOSFuidTestAppDelegate.h */;
+		name = "iOSFuidTestAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 489;
+		vrLoc = 0;
+	};
+	3341822C147A47F200FFF0B8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* iOSFuidTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/artgolf1000/Desktop/coreaudio/fluidsynth-1.0.9/iOS/iOSFuidTest/iOSFuidTest-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	3341822E147A47F200FFF0B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* iOSFuidTestViewController.mm */;
+		name = "iOSFuidTestViewController.mm: 19";
+		rLen = 0;
+		rLoc = 330;
+		rType = 0;
+		vrLen = 644;
+		vrLoc = 0;
+	};
+	33A6E526147A4C840087B74A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* iOSFuidTestViewController.mm */;
+		name = "iOSFuidTestViewController.mm: 19";
+		rLen = 0;
+		rLoc = 330;
+		rType = 0;
+		vrLen = 615;
+		vrLoc = 51;
+	};
+}

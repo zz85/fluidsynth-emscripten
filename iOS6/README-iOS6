@@ -1,0 +1,28 @@
+1. Copy "./changed files/build_for_iphoneos.sh" to "../"
+
+
+2. Edit ../build_for_iphoneos.sh, modify these items to your SDK version:
+default_gcc_version=4.2
+default_iphoneos_version=6.0
+default_macos_version=10.7.5
+
+
+3. Modify the architecture to yours
+arch=armv7s
+
+
+4. Build your fluid library:
+cd ../
+./build_for_iphoneos.sh device --disable-jack-support --enable-coreaudio --disable-coremidi --without-readline
+
+
+5. Open ./iOS/iOSFuidTest/iOSFuidTest.xcodeproj with Xcode, you may need to change the default directory to yours:
+libfluidsynth.a: ../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/lib/
+Header Search Paths: ../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/include/
+Library Search Paths: ../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/lib/
+
+
+Then build and test on a iPhone or iPad, touch the button, it will play 12 random notes.
+
+
+If you have any doubts, contact me via artgolf1000 [at] gmail [dot] com
