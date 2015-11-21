@@ -154,11 +154,19 @@ typedef HMTX fluid_mutex_t;
 #define fluid_mutex_unlock(_m)    DosReleaseMutexSem(_m)
 
 #else
-typedef pthread_mutex_t fluid_mutex_t;
-#define fluid_mutex_init(_m)      pthread_mutex_init(&(_m), NULL)
-#define fluid_mutex_destroy(_m)   pthread_mutex_destroy(&(_m))
-#define fluid_mutex_lock(_m)      pthread_mutex_lock(&(_m))
-#define fluid_mutex_unlock(_m)    pthread_mutex_unlock(&(_m))
+
+typedef int fluid_mutex_t;
+#define fluid_mutex_init(_m)      { (_m) = 0; }
+#define fluid_mutex_destroy(_m)
+#define fluid_mutex_lock(_m)
+#define fluid_mutex_unlock(_m)
+
+
+// typedef pthread_mutex_t fluid_mutex_t;
+// #define fluid_mutex_init(_m)      pthread_mutex_init(&(_m), NULL)
+// #define fluid_mutex_destroy(_m)   pthread_mutex_destroy(&(_m))
+// #define fluid_mutex_lock(_m)      pthread_mutex_lock(&(_m))
+// #define fluid_mutex_unlock(_m)    pthread_mutex_unlock(&(_m))
 #endif
 
 

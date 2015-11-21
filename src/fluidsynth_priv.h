@@ -18,6 +18,17 @@
  * 02111-1307, USA
  */
 
+#include <pthread.h>
+#include <semaphore.h>
+#include <stdarg.h>
+#include <string.h>
+#include <stdlib.h>
+#include <fcntl.h> // for open
+#include <unistd.h> // for close
+#include <math.h>
+#include <stdio.h>
+#include <limits.h>
+#include <sys/time.h>
 
 #ifndef _FLUIDSYNTH_PRIV_H
 #define _FLUIDSYNTH_PRIV_H
@@ -121,7 +132,7 @@
 #define snprintf _snprintf
 #define vsnprintf _vsnprintf
 
-#define DSOUND_SUPPORT 1
+#define DSOUND_SUPPORT 0
 #define WINMIDI_SUPPORT 1
 #define STDIN_FILENO 0
 #define STDOUT_FILENO 1
@@ -209,14 +220,24 @@ typedef unsigned long long uint64;
 #else
 
 /* Linux & Darwin */
-typedef int8_t             sint8;
-typedef u_int8_t           uint8;
-typedef int16_t            sint16;
-typedef u_int16_t          uint16;
-typedef int32_t            sint32;
-typedef u_int32_t          uint32;
-typedef int64_t            sint64;
-typedef u_int64_t          uint64;
+// typedef int8_t             sint8;
+// typedef u_int8_t           uint8;
+// typedef int16_t            sint16;
+// typedef u_int16_t          uint16;
+// typedef int32_t            sint32;
+// typedef u_int32_t          uint32;
+// typedef int64_t            sint64;
+// typedef u_int64_t          uint64;
+
+typedef signed char        sint8;
+typedef unsigned char      uint8;
+typedef signed short       sint16;
+typedef unsigned short     uint16;
+typedef signed int         sint32;
+typedef unsigned int       uint32;
+/* FIXME: needs to be verified */
+typedef long long          sint64;
+typedef unsigned long long uint64;
 
 #endif
 

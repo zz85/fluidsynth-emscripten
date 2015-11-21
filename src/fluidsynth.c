@@ -192,6 +192,8 @@ void handle_signal(int sig_num)
  */
 int main(int argc, char** argv)
 {
+
+  printf("Hello World\n");
   fluid_settings_t* settings;
   int arg1 = 1;
   char buf[512];

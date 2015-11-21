@@ -5,7 +5,7 @@
 /* #undef ALSA_SUPPORT */
 
 /* whether or not we are supporting CoreAudio */
-#define COREAUDIO_SUPPORT 1
+/* #undef COREAUDIO_SUPPORT */
 
 /* whether or not we are supporting CoreMIDI */
 /* #undef COREMIDI_SUPPORT */
@@ -50,7 +50,7 @@
 /* #undef HAVE_LIBMIDISHARE */
 
 /* Define to 1 if you have the `pthread' library (-lpthread). */
-#define HAVE_LIBPTHREAD 1
+/* #undef HAVE_LIBPTHREAD */
 
 /* Define to 1 if you have the <limits.h> header file. */
 #define HAVE_LIMITS_H 1

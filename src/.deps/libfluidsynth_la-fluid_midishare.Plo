@@ -1,4 +1,0 @@
-libfluidsynth_la-fluid_midishare.lo libfluidsynth_la-fluid_midishare.o:  \
- fluid_midishare.c config.h
-
-config.h:

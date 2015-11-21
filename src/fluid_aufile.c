@@ -29,7 +29,6 @@
 #include "fluid_sys.h"
 #include <stdio.h>
 
-
 /** fluid_file_audio_driver_t
  *
  * This structure should not be accessed directly. Use audio port
@@ -171,8 +170,8 @@ static int fluid_file_audio_run_s16(void* d, unsigned int clock_time)
 
 		n = fwrite((char*) dev->buf + offset, 1, dev->buf_size - offset, dev->file);
 		if (n < 0) {
-			FLUID_LOG(FLUID_ERR, "Audio output file write error: %s",
-				  strerror (errno));
+			FLUID_LOG(FLUID_ERR, "Audio output file write error: %s");
+			// , strerror (errno)
 			return 0;
 		}
 	}
