@@ -853,23 +853,24 @@ fluid_timer_start(void *data)
   /* keep track of the start time for absolute positioning */
   start = fluid_curtime();
 
-  while (cont) {
+  // while (cont) {
+    // printf("inside timer\n");
 
     /* do whatever we have to do */
-    cont = (*timer->callback)(timer->data, fluid_curtime() - start);
+    // cont = (*timer->callback)(timer->data, fluid_curtime() - start);
 
-    count++;
+    // count++;
 
     /* to avoid incremental time errors, calculate the delay between
        two callbacks bringing in the "absolute" time (count *
        timer->msec) */
-    delay = (count * timer->msec) - (fluid_curtime() - start);
-    if (delay > 0) {
-      usleep(delay * 1000);
-    }
+    // delay = (count * timer->msec) - (fluid_curtime() - start);
+  //   if (delay > 0) {
+  //     usleep(delay * 1000);
+  //   }
 
-    cont &= timer->cont;
-  }
+  //   cont &= timer->cont;
+  // }
 
   FLUID_LOG(FLUID_DBG, "Timer thread finished");
   if (timer->thread != 0) {
@@ -907,34 +908,42 @@ new_fluid_timer(int msec, fluid_timer_callback_t callback, void* data,
 
   err = pthread_attr_init(&rt_attr);
   if (err == 0) {
-	  err = pthread_attr_setschedpolicy(&rt_attr, SCHED_FIFO);
-	  if (err == 0) {
-		  priority.sched_priority = 10;
-		  err = pthread_attr_setschedparam(&rt_attr, &priority);
-		  if (err == 0) {
-			  attr = &rt_attr;
-		  }
-	  }
+	  // err = pthread_attr_setschedpolicy(&rt_attr, SCHED_FIFO);
+	  // if (err == 0) {
+		 //  priority.sched_priority = 10;
+		 //  err = pthread_attr_setschedparam(&rt_attr, &priority);
+		 //  if (err == 0) {
+			//   attr = &rt_attr;
+		 //  }
+	  // }
   }
 
-  if (new_thread) {
-	  err = pthread_create(&timer->thread, attr, fluid_timer_start, (void*) timer);
-	  if (err == 0) {
-		  FLUID_LOG(FLUID_DBG, "The timer thread was created with real-time priority");
-	  } else {
-		  /* Create the thread with default attributes */
-		  err = pthread_create(&timer->thread, NULL, fluid_timer_start, (void*) timer);
-		  if (err != 0) {
-			  FLUID_LOG(FLUID_ERR, "Failed to create the timer thread");
-			  FLUID_FREE(timer);
-			  return NULL;
-		  } else {
-			  FLUID_LOG(FLUID_DBG, "The timer thread does not have real-time priority");
-		  }
-	  }
-  } else {
-    fluid_timer_start((void*) timer);
-  }
+  printf("pthread new_thread %s....\n", new_thread);
+  callback(data, 1 );
+  // fluid_curtime() - timer->start
+  // (timer->data, fluid_curtime() - timer->start)
+
+  // if (new_thread) {
+  //   printf("pthread create....");
+	 //  err = pthread_create(&timer->thread, attr, fluid_timer_start, (void*) timer);
+	 //  if (err == 0) {
+		//   FLUID_LOG(FLUID_DBG, "The timer thread was created with real-time priority");
+	 //  } else {
+		//   /* Create the thread with default attributes */
+		//   err = pthread_create(&timer->thread, NULL, fluid_timer_start, (void*) timer);
+		//   if (err != 0) {
+		// 	  FLUID_LOG(FLUID_ERR, "Failed to create the timer thread");
+		// 	  FLUID_FREE(timer);
+		// 	  return NULL;
+		//   } else {
+		// 	  FLUID_LOG(FLUID_DBG, "The timer thread does not have real-time priority");
+		//   }
+	 //  }
+  // } else {
+  //   fluid_timer_start((void*) timer);
+  // }
+
+  // fluid_timer_start((void*) timer);
   return timer;
 }
 

@@ -17,7 +17,7 @@
 #define DARWIN 1
 
 /* Define to activate debugging message */
-#define DEBUG 0
+#define DEBUG 1
 
 /* Define to enable FPE checks */
 /* #undef FPE_CHECK */

@@ -18,6 +18,8 @@
  * 02111-1307, USA
  */
 
+#include <emscripten.h>
+
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -299,7 +301,7 @@ int main(int argc, char** argv)
     case 0:	/* shouldn't normally happen, a long option's flag is set to NULL */
       printf ("option %s", long_options[option_index].name);
       if (optarg) {
-	printf (" with arg %s", optarg);
+	     printf (" with arg %s", optarg);
       }
       printf ("\n");
       break;
@@ -418,11 +420,8 @@ int main(int argc, char** argv)
     exit (0);
   }
 
-#ifdef WIN32
-  SetPriorityClass(GetCurrentProcess(), REALTIME_PRIORITY_CLASS);
-#endif
-
 #ifdef LASH_ENABLED
+  printf("LAsh Enabled\n");
   /* connect to the lash server */
   if (connect_lash)
     {
@@ -462,8 +461,32 @@ int main(int argc, char** argv)
     fluid_source(cmd_handler, buf);
   }
 
+  EM_ASM_({
+    FS.mkdir('/working');
+    FS.mount(NODEFS, { root: '.' }, './working');
+  }, argv[i]);
+
+
+
   /* load the soundfonts (check that all non options are SoundFont or MIDI files) */
   for (i = arg1; i < argc; i++) {
+    printf("Moo: %s\n", argv[i]);
+    // EM_ASM_({
+    //   // function mooo(x) {
+    //   //   var s = '';
+    //   //   var y;
+    //   //   while (y = Module.HEAPU8[x++]) {
+    //   //     s += String.fromCharCode(y)
+    //   //   }
+    //   //   debugger;
+    //   //   return s;
+    //   // };
+    //   // var p = mooo($0);
+    //   // console.log(p);
+    //   // var fs = require('fs');
+    //   // fs.writeFileSync(p, p);
+    // }, argv[i]);
+
     if (fluid_is_soundfont(argv[i]))
     {
       if (fluid_synth_sfload(synth, argv[i], 1) == -1)

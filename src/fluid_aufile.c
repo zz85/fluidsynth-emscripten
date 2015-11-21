@@ -73,6 +73,7 @@ fluid_audio_driver_t*
 new_fluid_file_audio_driver(fluid_settings_t* settings,
 			    fluid_synth_t* synth)
 {
+	printf("new_fluid_file_audio_driver\n");
 	fluid_file_audio_driver_t* dev;
 	int err;
 	char* filename;
@@ -123,6 +124,7 @@ new_fluid_file_audio_driver(fluid_settings_t* settings,
 
 int delete_fluid_file_audio_driver(fluid_audio_driver_t* p)
 {
+	printf("delete_fluid_file_audio_driver\n");
 	fluid_file_audio_driver_t* dev = (fluid_file_audio_driver_t*) p;
 
 	if (dev == NULL) {
@@ -155,6 +157,7 @@ int delete_fluid_file_audio_driver(fluid_audio_driver_t* p)
 
 static int fluid_file_audio_run_s16(void* d, unsigned int clock_time)
 {
+	printf("fluid_file_audio_run_s16\n");
 	fluid_file_audio_driver_t* dev = (fluid_file_audio_driver_t*) d;
 	int n, offset;
 	unsigned int sample_time;

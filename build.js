@@ -59,6 +59,7 @@ var MAIN_SOURCES = [
 	"fluid_tuning.c",
 	"fluid_voice.c",
 	"fluid_aufile.c",
+	// "fluid_coreaudio.c",
 	"fluidsynth.c"
 ].map(function(x) {
 	return SOURCE_PATH + x
@@ -71,6 +72,8 @@ var DEFINES = ' ';
 var FLAGS = '' + OPTIMIZE_FLAGS;
 // FLAGS += ' -Wno-warn-absolute-paths ';
 FLAGS += ' -D HAVE_CONFIG_H=1 '
+// FLAGS += ' -s USE_PTHREADS=1 '
+// COREAUDIO
 // FLAGS += ' -s TOTAL_MEMORY=' + MEM + ' ';
 // FLAGS += ' -s NO_BROWSER=1 '; // for 20k less
 FLAGS += ' --memory-init-file 0 '; // for memless file
@@ -86,15 +89,15 @@ FLAGS += ' --memory-init-file 0 '; // for memless file
 /* DEBUG FLAGS */
 
 var DEBUG_FLAGS = ' -g ';
-// DEBUG_FLAGS += ' -s ASSERTIONS=2 '
-DEBUG_FLAGS += ' -s ASSERTIONS=1 '
+DEBUG_FLAGS += ' -s ASSERTIONS=2 '
+// DEBUG_FLAGS += ' -s ASSERTIONS=1 '
 // DEBUG_FLAGS += ' --profiling-funcs '
 // DEBUG_FLAGS += ' -s EMTERPRETIFY_ADVISE=1 '
 // DEBUG_FLAGS += ' -s ALLOW_MEMORY_GROWTH=1';
-// DEBUG_FLAGS += '  -s DEMANGLE_SUPPORT=1 ';
+DEBUG_FLAGS += '  -s DEMANGLE_SUPPORT=1 ';
 // DEBUG_FLAGS += ' -s DISABLE_EXCEPTION_CATCHING=0 ';
 
-// FLAGS += DEBUG_FLAGS
+FLAGS += DEBUG_FLAGS
 
 
 var INCLUDES = [
